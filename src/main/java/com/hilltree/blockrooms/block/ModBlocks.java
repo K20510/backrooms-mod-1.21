@@ -19,6 +19,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MOIST_CARPET_BLOCK = registerBlock("moist_carpet_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+    public static final DeferredBlock<Block> WALLPAPER_BLOCK = registerBlock("wallpaper_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
 
 
 
