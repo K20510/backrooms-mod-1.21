@@ -1,5 +1,6 @@
 package com.hilltree.blockrooms;
 
+import com.hilltree.blockrooms.block.ModBlocks;
 import com.hilltree.blockrooms.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,6 +40,7 @@ public class BlockRoomsMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
