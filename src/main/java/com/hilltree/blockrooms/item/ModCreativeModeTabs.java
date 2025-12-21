@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALMOND_WATER.get())).title(Component.translatable("creativetab.blockrooms.blockrooms_items"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ALMOND_WATER);
+                        output.accept(ModItems.EMPTY_BOTTLE);
                     })).build());
 
 

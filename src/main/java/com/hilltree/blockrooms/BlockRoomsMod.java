@@ -56,9 +56,6 @@ public class BlockRoomsMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.ALMOND_WATER);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
